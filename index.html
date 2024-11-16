@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Andres Gallego" />
+    <meta
+      name="description"
+      content="Andres Gallego's website portfolio for software engineering"
+    />
+    <title>Andres Gallego</title>
+    <link rel="icon" href="A.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Andres Gallego</h1>
+      <hr />
+      <nav aria-label="primary-navigation">
+        <h2>Menu</h2>
+        <ul>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#history">History</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <hr />
+    </header>
+
+    <main>
+      <article id="home" class="home">
+        <h2>Hello, I'm Andres Gallego</h2>
+        <p>Software Engineer & Web Developer</p>
+      </article>
+      <hr />
+      <article id="about">
+        <h2>About Me</h2>
+
+        <figure>
+          <img src="profile.jpg" alt="Andres Gallego profile picture" />
+          <figcaption>Profile</figcaption>
+        </figure>
+
+        <section>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
+            id saepe non cum voluptas numquam culpa sit recusandae aperiam,
+            consequatur ut, provident veritatis. Repudiandae aut hic enim omnis
+            velit adipisci?
+          </p>
+
+          <details>
+            <summary>Skills</summary>
+            <p><code>C++, Python, Java, Javascript, HTML, CSS</code></p>
+          </details>
+
+          <p>
+            Check out my
+            <a
+              href="https://drive.google.com/file/d/1LO2iZQ8Ddc-sbvXnQp-pz9wyV8LtuI7Q/view?usp=sharing"
+              target="_blank"
+              >Resume</a
+            >.
+          </p>
+        </section>
+      </article>
+
+      <hr />
+
+      <article id="projects">
+        <!-- Projects Section
+- Project title and a brief description for each project
+- Links to live demos or GitHub repositories
+- Thumbnail images or icons to represent each project (optional)
+- List of technologies used in each project (HTML, CSS, JavaScript, etc.) -->
+        <h2>Projects</h2>
+
+        <section>
+          <dl>
+            <dt><h3>OfficebuddyAI</h3></dt>
+            <dd>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              vel nisi incidunt ex reiciendis earum eum. Dicta quibusdam harum
+              saepe asperiores a quisquam facere, repudiandae quam voluptas
+              deleniti exercitationem maxime.
+              <p>
+                <a
+                  href="https://github.com/andresga11/OfficebuddyAI"
+                  target="_blank"
+                  >Click here</a
+                >
+              </p>
+            </dd>
+
+            <dt><h3>Postfix integer Calculator</h3></dt>
+            <dd>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              vel nisi incidunt ex reiciendis earum eum. Dicta quibusdam harum
+              saepe asperiores a quisquam facere, repudiandae quam voluptas
+              deleniti exercitationem maxime.
+              <p>
+                <a
+                  href="https://github.com/andresga11/PostfixCalculator"
+                  target="_blank"
+                  >Click here</a
+                >
+              </p>
+            </dd>
+            <dt><h3>Project 3</h3></dt>
+            <dd>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              vel nisi incidunt ex reiciendis earum eum. Dicta quibusdam harum
+              saepe asperiores a quisquam facere, repudiandae quam voluptas
+              deleniti exercitationem maxime.
+            </dd>
+          </dl>
+        </section>
+      </article>
+      <hr />
+      <article id="history">
+        <h2>History</h2>
+        <section>
+          <ul>
+            <li>VMCHS</li>
+            <li>San Diego Mesa College</li>
+            <li>California State University of Fullerton</li>
+            <li>Looking for work (present)</li>
+          </ul>
+        </section>
+      </article>
+
+      <hr />
+
+      <article id="contact">
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend><h2>Contact me</h2></legend>
+            <p>
+              <label for="firstName"
+                >First Name:
+                <input
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  placeholder="Name"
+                  autocomplete="on"
+                  required
+                  autofocus
+                />
+              </label>
+            </p>
+            <p>
+              <label for="lastName"
+                >Last Name:
+                <input
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                  placeholder="Last Name"
+                  autocomplete="on"
+                  required
+                />
+              </label>
+            </p>
+            <p>
+              <label for="email">
+                Email:
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="example@gmail.com"
+                  required
+                />
+              </label>
+            </p>
+            <p>
+              <label for="message">Write me a message!</label>
+              <br />
+
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Type your message here"
+              ></textarea>
+            </p>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </fieldset>
+        </form>
+      </article>
+
+      <footer>
+        <p>&lt;&lt;&lt; &copy; Andres Gallego &gt;&gt;&gt;</p>
+        <p>
+          <a href="#"> Back to Top</a>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
