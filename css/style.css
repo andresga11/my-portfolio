@@ -3,41 +3,38 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Geist+Mono:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nanum+Gothic&display=swap');
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
-header  h1 {
-    text-align: center;
-    font-size: 3rem;
+.navbar {
+    margin: 0;
+    /* text-align: center; */
+    /* font-size: 2.0rem; */
     /* margin: 0.3em; */
-    padding: 0.3em;
-    font-family: "Kanit";
-    background-color: #04030f;
+    /* padding: 0.3em; */
+    /* font-family: "Kanit"; */
+    /* background-color: #04030f; */
 }
 
-header nav {
+/* header nav {
     text-align: center;
     font-size: 1.2rem;
     background-color: #616161;
     padding: 0.2em;
     line-height: 1.5em;
     color: #04030f;
+} */
+
+body, article { 
+    padding-top: 70px; 
 }
 
-body {
-    font-size: 1.5rem;
-    background-color: #333;
-    color: whitesmoke;
-  }
 
-article {
-    margin: 0.9em;
-}
 
-.home {
+.jumbotron {
     font-family: "Nanum Gothic";
     font-size: 1.8em;
     line-height: 2em;
@@ -45,10 +42,29 @@ article {
     padding-top: 200px;
     padding-bottom: 200px;
     margin: 0;
-    background-image: url("/intro_background.jpg");
+    background-image: url("/images/intro_background.jpg");
     background-size: cover;
+    background-color: #333;
+    color: whitesmoke;
 
 }
+
+.about {
+    background-color: white;
+ }
+
+.projects {
+    background-color: #D6E5E3;
+}
+
+/* .contact {
+    background-color: #000000; 
+    color: white;
+} */
+/* main {
+    background-color: #FFFDFD;
+    color: #04030f;
+} */
 
 a {
     color: aliceblue
@@ -61,3 +77,11 @@ a:visited {
 a:hover, a:active {
     color: #eee
   }  
+
+.custom-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.custom-card:hover {
+    transform: scale(1.1) ; /* Scale the card by 10% on hover */
+  }

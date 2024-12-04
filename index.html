@@ -9,204 +9,226 @@
     />
     <title>Andres Gallego</title>
     <link rel="icon" href="A.jpeg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
-      <h1>Andres Gallego</h1>
-      <hr />
-      <nav aria-label="primary-navigation">
-        <h2>Menu</h2>
-        <ul>
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#history">History</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <hr />
-    </header>
+      <!-- <h1>Welcome</h1> -->
+
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+          <div class="container-fluid">
+            <!-- Navbar Brand -->
+            <a class="navbar-brand" href="#">Andres Gallego</a>
+      
+            <!-- Toggle Button for Collapsible Menu -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#history">History</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
 
     <main>
-      <article id="home" class="home">
+      <article id="home" class="home jumbotron text-center">
         <h2>Hello, I'm Andres Gallego</h2>
         <p>Software Engineer & Web Developer</p>
       </article>
-      <hr />
-      <article id="about">
-        <h2>About Me</h2>
 
-        <figure>
-          <img src="profile.jpg" alt="Andres Gallego profile picture" />
-          <figcaption>Profile</figcaption>
-        </figure>
-
-        <section>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
-            id saepe non cum voluptas numquam culpa sit recusandae aperiam,
-            consequatur ut, provident veritatis. Repudiandae aut hic enim omnis
-            velit adipisci?
-          </p>
-
-          <details>
-            <summary>Skills</summary>
-            <p><code>C++, Python, Java, Javascript, HTML, CSS</code></p>
-          </details>
-
-          <p>
-            Check out my
-            <a
-              href="https://drive.google.com/file/d/1LO2iZQ8Ddc-sbvXnQp-pz9wyV8LtuI7Q/view?usp=sharing"
-              target="_blank"
-              >Resume</a
-            >.
-          </p>
-        </section>
-      </article>
-
-      <hr />
-
-      <article id="projects">
-        <!-- Projects Section
-- Project title and a brief description for each project
-- Links to live demos or GitHub repositories
-- Thumbnail images or icons to represent each project (optional)
-- List of technologies used in each project (HTML, CSS, JavaScript, etc.) -->
-        <h2>Projects</h2>
-
-        <section>
-          <dl>
-            <dt><h3>OfficebuddyAI</h3></dt>
-            <dd>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              vel nisi incidunt ex reiciendis earum eum. Dicta quibusdam harum
-              saepe asperiores a quisquam facere, repudiandae quam voluptas
-              deleniti exercitationem maxime.
+      <article id="about" class="container-fluid">
+        <h2 class="text-center mb-5">About Me</h2>
+      
+        <div class="row justify-content-center">
+          <!-- Profile Picture -->
+          <div class="col-md-4 text-center">
+            <figure>
+              <img src="/images/profile.jpg" alt="Andres Gallego profile picture" class="img-fluid rounded-circle mb-3" />
+              <figcaption>Profile</figcaption>
+            </figure>
+          </div>
+      
+          <!-- About Me Content -->
+          <div class="col-md-8">
+            <section>
               <p>
-                <a
-                  href="https://github.com/andresga11/OfficebuddyAI"
-                  target="_blank"
-                  >Click here</a
-                >
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
+                id saepe non cum voluptas numquam culpa sit recusandae aperiam,
+                consequatur ut, provident veritatis. Repudiandae aut hic enim omnis
+                velit adipisci?
               </p>
-            </dd>
-
-            <dt><h3>Postfix integer Calculator</h3></dt>
-            <dd>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              vel nisi incidunt ex reiciendis earum eum. Dicta quibusdam harum
-              saepe asperiores a quisquam facere, repudiandae quam voluptas
-              deleniti exercitationem maxime.
+      
+              <details>
+                <summary class="fw-bold">Skills</summary>
+                <p><code>C++, Python, Java, JavaScript, HTML, CSS</code></p>
+              </details>
+      
               <p>
+                Check out my
                 <a
-                  href="https://github.com/andresga11/PostfixCalculator"
+                  href="https://drive.google.com/file/d/1LO2iZQ8Ddc-sbvXnQp-pz9wyV8LtuI7Q/view?usp=sharing"
                   target="_blank"
-                  >Click here</a
-                >
+                  class="text-decoration-none"
+                  >Resume</a
+                >.
               </p>
-            </dd>
-            <dt><h3>Project 3</h3></dt>
-            <dd>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              vel nisi incidunt ex reiciendis earum eum. Dicta quibusdam harum
-              saepe asperiores a quisquam facere, repudiandae quam voluptas
-              deleniti exercitationem maxime.
-            </dd>
-          </dl>
-        </section>
-      </article>
-      <hr />
-      <article id="history">
-        <h2>History</h2>
-        <section>
-          <ul>
-            <li>VMCHS</li>
-            <li>San Diego Mesa College</li>
-            <li>California State University of Fullerton</li>
-            <li>Looking for work (present)</li>
-          </ul>
-        </section>
+            </section>
+          </div>
+        </div>
       </article>
 
-      <hr />
+      <article id="projects" class="container mb-5">
+        <h2 class="text-center mb-5">Projects</h2>
+      
+        <div class="row g-5 mb-5">
+          <!-- First Project -->
+          <div class="col-md-6 col-12 mb-4 ">
+            <div class="card custom-card shadow" style="width: 100%;">
+              <img src="images/A.jpeg" class="card-img-top" alt="Project 1 Thumbnail">
+              <div class="card-body">
+                <h5 class="card-title">OfficebuddyAI</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                  Repudiandae quam voluptas deleniti exercitationem maxime.
+                </p>
+                <a href="https://github.com/andresga11/OfficebuddyAI" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Second Project -->
+          <div class="col-md-6 col-12 mb-4">
+            <div class="card custom-card shadow" style="width: 100%;">
+              <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="Project 2 Thumbnail">
+              <div class="card-body">
+                <h5 class="card-title">Postfix Integer Calculator</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                  Repudiandae quam voluptas deleniti exercitationem maxime.
+                </p>
+                <a href="https://github.com/andresga11/PostfixCalculator" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="row g-5">
+          <!-- Third Project -->
+          <div class="col-md-6 col-12 mb-4">
+            <div class="card custom-card shadow" style="width: 100%;">
+              <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="Project 3 Thumbnail">
+              <div class="card-body">
+                <h5 class="card-title">Project 3</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                  Repudiandae quam voluptas deleniti exercitationem maxime.
+                </p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Fourth Project -->
+          <div class="col-md-6 col-12 mb-4">
+            <div class="card custom-card shadow" style="width: 100%;">
+              <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="Project 4 Thumbnail">
+              <div class="card-body">
+                <h5 class="card-title">Project 4</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                  Repudiandae quam voluptas deleniti exercitationem maxime.
+                </p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      
 
-      <article id="contact">
-        <form action="https://httpbin.org/get" method="get">
-          <fieldset>
-            <legend><h2>Contact me</h2></legend>
-            <p>
-              <label for="firstName"
-                >First Name:
-                <input
-                  type="text"
-                  name="firstName"
-                  id="firstName"
-                  placeholder="Name"
-                  autocomplete="on"
-                  required
-                  autofocus
-                />
-              </label>
-            </p>
-            <p>
-              <label for="lastName"
-                >Last Name:
-                <input
-                  type="text"
-                  name="lastName"
-                  id="lastName"
-                  placeholder="Last Name"
-                  autocomplete="on"
-                  required
-                />
-              </label>
-            </p>
-            <p>
-              <label for="email">
-                Email:
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="example@gmail.com"
-                  required
-                />
-              </label>
-            </p>
-            <p>
-              <label for="message">Write me a message!</label>
-              <br />
-
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="10"
-                placeholder="Type your message here"
-              ></textarea>
-            </p>
-
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-          </fieldset>
+      <article id="contact" class="bg-black">
+        <h2 class="text-center text-white">Contact me</h2>
+        <form class="container p-5 text-white">
+          <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-6">
+              <div class="form-group mb-3">
+                <label for="fName" class="mb-2">First name</label>
+                <input type="text" class="form-control" id="fName" placeholder="John">
+              </div>
+              <div class="form-group mb-3">
+                <label for="lName" class="mb-2">Last name</label>
+                <input type="text" class="form-control" id="lName" placeholder="Doe">
+              </div>
+              <div class="form-group mb-3">
+                <label for="email" class="mb-2">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="John@gmail.com">
+              </div>
+              <div class="form-group mb-3">
+                <label for="password" class="mb-2">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password">
+              </div>
+              
+            </div>
+            
+            <!-- Right Column -->
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="additionalInfo" class="mb-2">Additional Information</label>
+                <textarea class="form-control" id="additionalInfo" rows="10" placeholder="Type your message here"></textarea>
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-light w-25 mx-auto mt-5">Submit</button>
+            </div>
+        
+          </div>
         </form>
       </article>
+      
+      
 
-      <footer>
+      <footer class="container-fluid text-center bg-black text-white">
         <p>&lt;&lt;&lt; &copy; Andres Gallego &gt;&gt;&gt;</p>
-        <p>
+        <p class="m-0 pb-3">
           <a href="#"> Back to Top</a>
         </p>
       </footer>
